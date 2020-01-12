@@ -12,7 +12,6 @@ class TrendingPosts extends React.Component {
     fetch('http://localhost:3000/posts')
       .then((result) => result.json())
       .then((posts) => {
-        console.log(posts);
         this.setState({ posts: posts });
       });
   }

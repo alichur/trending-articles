@@ -1,7 +1,7 @@
 import React from 'react';
-import Article from '../article/Article.js'
+import Post from '../post/Post.js'
 
-class TrendingArticles extends React.Component {
+class TrendingPosts extends React.Component {
   constructor(props) {
     super(props);
     this.state = { posts: [] };
@@ -24,11 +24,11 @@ class TrendingArticles extends React.Component {
         {posts ?
           posts.map(
             (post) =>
-              <Article
+              <Post
                 title={post.title}
                 author={post.author}
                 slug={post.slug}>
-              </Article>
+              </Post>
           ) :
           <div>No trending articles found</div>
         }
@@ -37,4 +37,4 @@ class TrendingArticles extends React.Component {
   }
 }
 
-export default TrendingArticles;
+export default TrendingPosts;

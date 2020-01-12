@@ -1,11 +1,11 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import TrendingArticles from './components/trending-articles/TrendingArticles.js'
+import TrendingPosts from './components/trending-posts/TrendingPosts.js'
 
 function App() {
   return (
-    <TrendingArticles></TrendingArticles>
+    <TrendingPosts></TrendingPosts>
   );
 }
 

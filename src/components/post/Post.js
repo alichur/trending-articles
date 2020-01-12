@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Article(props) {
+function Post(props) {
   return (
     <div>
       <div>{props.title}</div>
@@ -11,4 +11,4 @@ function Article(props) {
   );
 }
 
-export default Article;
+export default Post;

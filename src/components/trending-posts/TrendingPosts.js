@@ -28,6 +28,7 @@ class TrendingPosts extends React.Component {
               <Post
                 title={post.title}
                 author={post.author}
+                tags={post.tags}
                 slug={post.slug}>
               </Post>
           ) :

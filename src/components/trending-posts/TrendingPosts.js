@@ -1,5 +1,6 @@
 import React from 'react';
-import Post from '../post/Post.js'
+import Post from '../post/Post.js';
+import { wrapper } from './TrendingPosts.module.css';
 
 class TrendingPosts extends React.Component {
   constructor(props) {
@@ -19,7 +20,7 @@ class TrendingPosts extends React.Component {
   render() {
     const posts = this.state.posts;
     return (
-      <main>
+      <main className={wrapper}>
         <div>Here are the trending articles:</div>
         {posts ?
           posts.map(

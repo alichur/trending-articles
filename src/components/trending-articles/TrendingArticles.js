@@ -17,12 +17,21 @@ class TrendingArticles extends React.Component {
   }
 
   render() {
+    const posts = this.state.posts;
     return (
       <main>
         <div>Here are the trending articles:</div>
-        <Article></Article>
-        <Article></Article>
-        <Article></Article>
+        {posts ?
+          posts.map(
+            (post) =>
+              <Article
+                title={post.title}
+                author={post.author}
+                slug={post.slug}>
+              </Article>
+          ) :
+          <div>No trending articles found</div>
+        }
       </main>
     );
   }

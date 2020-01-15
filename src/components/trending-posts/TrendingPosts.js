@@ -1,7 +1,7 @@
 import React from 'react';
 import Post from '../post/Post.js';
 import HeaderBar from '../header-bar/HeaderBar.js'
-import { wrapper } from './TrendingPosts.module.css';
+import { wrapper, heading } from './TrendingPosts.module.css';
 
 
 class TrendingPosts extends React.Component {
@@ -25,6 +25,7 @@ class TrendingPosts extends React.Component {
 
       <main className={wrapper}>
         <HeaderBar />
+        <div class={heading}>Trending Articles</div>
         {posts.length > 0 ?
           posts.map(
             (post) =>

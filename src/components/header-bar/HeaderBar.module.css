@@ -3,6 +3,9 @@
     flex-direction : row;
     justify-content: space-between;
     width          : 100%;
+    box-shadow     : 0 4px 12px 0 rgba(0, 0, 0, 0.05);
+    margin-bottom  : 2em;
+    padding        : .7em 1.5em .7em 1.5em;
 }
 
 .button {

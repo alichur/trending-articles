@@ -1,0 +1,17 @@
+.container {
+    display        : flex;
+    flex-direction : row;
+    justify-content: space-between;
+    width          : 100%;
+}
+
+.button {
+    color        : #029E74;
+    border-color : #029E74;
+    font-weight  : 500;
+    padding      : 0.6em 1em 0.6em 1em;
+    border-radius: 4px;
+    border-width : 1px;
+    border-style : solid;
+    font-size    : 1em;
+}

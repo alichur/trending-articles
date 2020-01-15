@@ -5,8 +5,8 @@
     border-radius: 3px;
 
     padding: 1em;
-    width  : 90%;
-    margin : .5em;
+    width  : 100%;
+    margin : .5em 0 .5em 0;
 }
 
 .author {
@@ -27,5 +27,6 @@
     flex-wrap      : wrap;
     justify-content: flex-start;
     list-style-type: none;
+    margin         : 0;
     padding        : 0;
 }

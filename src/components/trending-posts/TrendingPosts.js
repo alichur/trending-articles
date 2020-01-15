@@ -1,6 +1,8 @@
 import React from 'react';
 import Post from '../post/Post.js';
+import HeaderBar from '../header-bar/HeaderBar.js'
 import { wrapper } from './TrendingPosts.module.css';
+
 
 class TrendingPosts extends React.Component {
   constructor(props) {
@@ -20,9 +22,10 @@ class TrendingPosts extends React.Component {
   render() {
     const posts = this.state.posts;
     return (
+
       <main className={wrapper}>
-        <div>Here are the trending articles:</div>
-        {posts ?
+        <HeaderBar />
+        {posts.length > 0 ?
           posts.map(
             (post) =>
               <Post

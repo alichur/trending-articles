@@ -25,7 +25,7 @@ class TrendingPosts extends React.Component {
 
       <main className={wrapper}>
         <HeaderBar />
-        <div class={heading}>Trending Articles</div>
+        <h1 class={heading}>Trending Articles</h1>
         {posts.length > 0 ?
           posts.map(
             (post) =>

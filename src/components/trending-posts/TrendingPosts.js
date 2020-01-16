@@ -31,6 +31,7 @@ class TrendingPosts extends React.Component {
             posts.map(
               (post) =>
                 <Post
+                  key={post.slug}
                   title={post.title}
                   author={post.author}
                   tags={post.tags}

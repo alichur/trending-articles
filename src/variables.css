@@ -1,5 +1,6 @@
 :root {
     --secondary     : #03a87c;
+    --primary       : black;
     --primary-light : #f0f0f0;
     --primary-medium: rgba(0, 0, 0, 0.68);
     --spacing       : 1.5em;

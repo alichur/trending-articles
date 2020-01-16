@@ -15,8 +15,10 @@
 }
 
 .title {
-    font-weight: 600;
-    font-size  : 2em;
+    font-weight    : 600;
+    font-size      : 2em;
+    text-decoration: none;
+    color          : var(--primary);
 }
 
 .tags {

@@ -1,5 +1,5 @@
 import React from 'react';
-import Post from '../post/Post.js';
+import Post from '../post-preview/PostPreview.js';
 import HeaderBar from '../header-bar/HeaderBar.js'
 import { wrapper, content, heading } from './TrendingPosts.module.css';
 
@@ -14,7 +14,6 @@ class TrendingPosts extends React.Component {
     fetch('http://localhost:3000/posts')
       .then((result) => result.json())
       .then((posts) => {
-        console.log(posts);
         this.setState({ posts: posts });
       });
   }
@@ -29,9 +28,9 @@ class TrendingPosts extends React.Component {
         <div className={content}>
           {posts.length > 0 ?
             posts.map(
-              (post) =>
+              (post, index) =>
                 <Post
-                  key={post.slug}
+                  key={index}
                   title={post.title}
                   author={post.author}
                   tags={post.tags}

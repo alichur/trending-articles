@@ -7,7 +7,7 @@
     width          : 100%;
     box-shadow     : 0 4px 12px 0 rgba(0, 0, 0, 0.05);
     margin-bottom  : 2em;
-    padding        : var(--spacing-small);
+    padding        : var(--spacing-small) var(--spacing) var(--spacing-small) var(--spacing);
 }
 
 .button {
@@ -19,4 +19,46 @@
     border-width : 1px;
     border-style : solid;
     font-size    : 1em;
+    cursor       : pointer;
+}
+
+.actions {
+    display        : flex;
+    flex-direction : row;
+    justify-content: space-between;
+    align-items    : center;
+}
+
+.search {
+    height: 100%;
+    cursor: pointer;
+}
+
+.member {
+    color: var(--primary-medium);
+}
+
+.signIn {
+    color: var(--secondary);
+}
+
+.member,
+.signIn {
+    display        : none;
+    text-decoration: none;
+}
+
+.member,
+.signIn,
+button {
+    margin-left: var(--spacing);
+}
+
+@media (min-width:768px) {
+
+    .member,
+    .signIn {
+        display: inline-block;
+    }
+
 }

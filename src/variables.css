@@ -1,9 +1,10 @@
 :root {
-    --secondary    : #03a87c;
-    --primary-light: #f0f0f0;
-    --spacing      : 1.5em;
-    --spacing-small: .7em;
-    --body-font    :
+    --secondary     : #03a87c;
+    --primary-light : #f0f0f0;
+    --primary-medium: rgba(0, 0, 0, 0.68);
+    --spacing       : 1.5em;
+    --spacing-small : .7em;
+    --body-font     :
         -apple-system,
         system-ui,
         "Segoe UI",

@@ -1,5 +1,18 @@
-@value secondary #03a87c;
-@value spacing 1.5em;
-@value spacing-small .7em;
-
-@value desktop (min-width: 960px);
+:root {
+    --secondary    : #03a87c;
+    --primary-light: #f0f0f0;
+    --spacing      : 1.5em;
+    --spacing-small: .7em;
+    --body-font    :
+        -apple-system,
+        system-ui,
+        "Segoe UI",
+        Roboto,
+        Oxygen,
+        Ubuntu,
+        Cantarell,
+        "Open Sans",
+        "Helvetica Neue",
+        sans-serif;
+    --heading-font: Georgia, Cambria, "Times New Roman", Times, serif;
+}

@@ -1,7 +1,7 @@
 import React from 'react';
 import Post from '../post/Post.js';
 import HeaderBar from '../header-bar/HeaderBar.js'
-import { wrapper, heading } from './TrendingPosts.module.css';
+import { wrapper, content, heading } from './TrendingPosts.module.css';
 
 
 class TrendingPosts extends React.Component {
@@ -25,19 +25,21 @@ class TrendingPosts extends React.Component {
 
       <main className={wrapper}>
         <HeaderBar />
-        <h1 class={heading}>Trending Articles</h1>
-        {posts.length > 0 ?
-          posts.map(
-            (post) =>
-              <Post
-                title={post.title}
-                author={post.author}
-                tags={post.tags}
-                slug={post.slug}>
-              </Post>
-          ) :
-          <div>No trending articles found</div>
-        }
+        <h1 className={heading}>Trending Articles</h1>
+        <div className={content}>
+          {posts.length > 0 ?
+            posts.map(
+              (post) =>
+                <Post
+                  title={post.title}
+                  author={post.author}
+                  tags={post.tags}
+                  slug={post.slug}>
+                </Post>
+            ) :
+            <div>No trending articles found</div>
+          }
+        </div>
       </main>
     );
   }

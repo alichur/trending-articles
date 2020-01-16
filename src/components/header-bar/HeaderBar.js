@@ -4,9 +4,9 @@ import { container, button } from './HeaderBar.module.css';
 
 
 function HeaderBar() {
-    return <header class={container}>
+    return <header className={container}>
         <MediumLogoSvg />
-        <button class={button}>Get started</button>
+        <button className={button}>Get started</button>
 
     </header >
 }
